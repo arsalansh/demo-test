@@ -68,6 +68,7 @@ img{
     width: auto;
     height: 200px;
     max-width: 100%;
+    z-index: 0;
     
 }
 img#bag,img#flower {
@@ -101,6 +102,74 @@ svg#icon {
 svg#icon:hover{
     background-color:#000 ;
     fill: #fff;
+}
+
+@media (max-width:991px){
+body{
+    max-width: 880px;
+}
+#center{
+    margin: 20px;
+    z-index: 999999999;
+}
+}
+@media (max-width:768px){
+    html{
+        font-size: 12px;
+    }
+body{
+    max-width: 680px;
+    overflow-y: auto;
+    padding: 0 20px;
+}
+.logo {
+    flex-direction: column;
+}
+.header,.nav2 {
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+#center{
+    margin: 40px;
+    z-index: 999999999;
+}
+img,img#coffee{
+    margin-top: 60px;
+    width: auto;
+    height: 150px;
+}
+.cmn-btn, .cmn-btn a, .cmn-btn1, .cmn-btn1 a {
+    font-size: 13px;
+    font-size: 500;
+    padding: 10px;
+    margin-top: 6px;
+}
+img#bag, img#flower {
+    top: 166px;
+}
+svg#icon{
+    width: 12px;
+    height: 12px;
+}
+}
+@media (max-width:480px){
+    img,img#coffee{
+        height: 100px;
+        width: auto;
+    }
+    img#makeup {
+    position: absolute;
+    left: 30px;
+}
+img#coffee {
+   
+   right: 8px;
+}
+#center{
+    margin: 0px;
+
+}
+
 }
 /* 
 this is for backup 
